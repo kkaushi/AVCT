@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AVCT2.0</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script> 
+
+function newWindow(){
+		//window.open('information.html','channelmode=yes','toolbar=no','menubar=no','fullscreen=yes','location=no');
+		window.open("information.html","showInformationWindow","channelmode=1,toolbar=0,fullscreen=1,location=0,scrollbars=1");
+	}
+
+function showOverview(){
+	//window.open('System_overview.html','channelmode=yes','toolbar=no','menubar=no','fullscreen=yes','location=no');
+	window.open("System_overview.html","showOverviewWindow","channelmode=1,toolbar=0,fullscreen=1,location=0,scrollbars=1");
+}
+
+$(document).ready(function(){
+  $("#flip_information").click(function(){
+    $("#panel_information").slideToggle("swing");
+//     $("#iframe_body").toggle();
+    {
+//     	$("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);	
+// 		$("#iframe_body").css("background-color","#02A81B");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+    }
+  });
+  
+  $("#flip_severity").click(function(){
+	    $("#panel_severity").slideToggle("swing");
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#D76203");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_literacy").click(function(){
+	    $("#panel_literacy").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#6650B5");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_knowledge").click(function(){
+	    $("#panel_knowledge").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#DC1E2F");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	    
+	  });
+  
+//   $("#system_overview").click(function(){
+// 	$("#div_system_overview").slideToggle("swing");
+// 	  });
+  
+});
+</script>
+</head>
+
+<body>
+<!-- <hr color="red"> -->
+<div style="color:white;">a</div>
+<div id="header-wrapper">
+	<div id="header-wrapper2">
+		<div id="header" class="container">
+			<div id="logo" >
+				<h1><a href="#"><span>AVCT</span></a></h1>
+				<h2 style="color: white;font-weight: 400;">Adaptive Virtual Consultation Tool</h2>				
+			</div>
+			<!-- div id="menu"> -->
+ 				<!-- ul> -->
+<!-- 					<li><a href="#" accesskey="1" title="" id="flip_information" style="background-color:grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">1.Information</a></li> -->
+<!-- 					<li><a href="#" accesskey="1" title="" id="flip_information" style="background-color:grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">1.Information</a></li> -->
+<!-- 					<li><a href="#" accesskey="2" title="" id="flip_severity" style="background-color: grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">2.Assessment </a></li> -->
+<!-- 					<li><a href="#" accesskey="3" title="" id="flip_literacy" style="background-color: grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">3.Symptom</a></li> -->
+<!-- 					<li><a href="#" accesskey="4" title="" id="flip_knowledge" style="background-color: grey;border-left:1px solid #FFFFFF;border-right:1px solid #FFFFFF;pointer-events:none;curson:default;" >4.Education</a></li> -->
+ 				<!--</ul>  -->
+				
+			</div>			
+		</div>
+		
+	</div>
+<!--</div>-->
+
+
+<!-- <div id="panel_information"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">			Step I: Information</p></div> -->
+<!-- <div id="panel_severity"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">							Step II: STOFHLA</p></div> -->
+<!-- <div id="panel_literacy"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">											Step III: Literacy</p></div> -->
+<!-- <div id="panel_knowledge"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">															Step IV: Knowledge</p></div> -->
+<div id="panel_information" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 1: Login Information</p></div>
+<div id="panel_severity" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 2: Health Literacy Test</p></div>
+<div id="panel_literacy" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 3: Severity Symptoms Score</p></div>
+<div id="panel_knowledge" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 4: BPH Knowledge Test</p></div>
+
+
+<hr>					
+<div id="iframe_body_two" style="width:100%; height:100px; background-color: white 	;padding-top: 50px; padding-left: 5%;"><!-- height:400px; -->
+	<br>
+	<!-- h2>Adaptive Virtual Consultation Tool</h2> -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div style="width: 90%; border: solid 1px #05598A; background-color: white;" align="center">
+		<br>
+		<br>
+		<div  align="center" style="width: 50%;background-color: white;float: left;">
+			<button id="start" onclick="newWindow()"><img border="0"  src="./images/start_system.jpg" ></button>
+		</div>
+		<div  align="center" style="width: 50%; margibackground-color: white;float:left;">
+			<button id="start" onclick="showOverview()"><img border="0"  src="./images/about.jpg" ></button>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+</div>
+
+</body>
+</html>

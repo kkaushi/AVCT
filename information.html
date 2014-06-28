@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AVCT2.0</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script> 
+
+function do_nothing(){
+	alert('do nothing');
+	}
+
+function move_panel()
+{
+	$("#panel_information").slideToggle("swing");
+	$("#iframe_body_two").hide(500);
+    $("#iframe_body").show(500);	
+	$("#iframe_body").css("background-color","#02A81B");
+    $("#iframe_body_two").css("background-color","white");
+    $("#iframe_body").hide(500);
+    $("#iframe_body_two").show(500);
+}
+
+$(document).ready(function(){
+  $("#flip_information").click(function(){
+    $("#panel_information").slideToggle("swing");
+
+//        	$("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);	
+// 		$("#iframe_body").css("background-color","#02A81B");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+  });
+  
+  $("#flip_severity").click(function(){
+	    $("#panel_severity").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#D76203");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_literacy").click(function(){
+	    $("#panel_literacy").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#6650B5");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_knowledge").click(function(){
+	    $("#panel_knowledge").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#DC1E2F");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);	    
+	  });
+
+});
+</script>
+</head>
+
+<!-- <body onload="move_panel()" onclick="do_nothing()" oncontextmenu="return false;"> -->
+<body onload="move_panel()">
+
+<!-- <hr color="red"> -->
+<div style="color:white;">a</div>
+<div id="header-wrapper">
+	<div id="header-wrapper2">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html"><span>AVCT</span></a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#" accesskey="1" title="" id="flip_information" style="background-color:#02A81B;border-left:1px solid #FFFFFF;" >1.Information</a></li>
+<!-- 					<li><a href="#" accesskey="2" title="" id="flip_severity" style="background-color: grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">2.Assessment </a></li> -->
+<!-- 					<li><a href="#" accesskey="3" title="" id="flip_literacy" style="background-color: grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">3.Symptom</a></li> -->
+<!-- 					<li><a href="#" accesskey="4" title="" id="flip_knowledge" style="background-color: grey;border-left:1px solid #FFFFFF;border-right:1px solid #FFFFFF;pointer-events:none;curson:default;">4.Education</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- <div id="panel_information"><p style="display: inline-block;font-size:1.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">			Step 1: Login Information</p></div> -->
+<!-- <div id="panel_severity"><p style="display: inline-block;font-size:1.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">							Step 2: Health Literacy Test</p></div> -->
+<!-- <div id="panel_literacy"><p style="display: inline-block;font-size:1.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">											Step 3: Severity Symptoms Score</p></div> -->
+<!-- <div id="panel_knowledge"><p style="display: inline-block;font-size:1.5em;text-transform: uppercase;font-weight: 800;color: #FFF;white-space:pre;">															Step 4: BPH Knowledge Test</p></div> -->
+<div id="panel_information" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 1: Login Information</p></div>
+<div id="panel_severity" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 2: Health Literacy Test</p></div>
+<div id="panel_literacy" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 3: Severity Symptoms Score</p></div>
+<div id="panel_knowledge" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 4: BPH Knowledge Test</p></div>
+
+
+<hr>					
+<div id="iframe_body_two" style="width:100%; height:100px; background-color: white 	;padding-top: 50px; padding-left: 5%;"><!-- height:400px; -->
+	<br>
+<!-- 	<h2 style="margin-left: 0;">Login Information</h2> -->
+<!-- 		<h2 style="margin-left: 0;">Please Enter your Email Id</h2> -->
+<h3 style="margin-left: 0;font-weight: 700;">Please Enter your Email Id</h3>
+	<div id="div_system_overview">
+		<br>
+		<br>
+		<br>
+		<div align="center" style="width:90%;border: solid 1px #05598A;">
+			<br>
+
+
+			<div></div>
+		<br>
+		<form action="verify_information_stofhla.php" method="post">
+<!-- 			<div align="right" style="width: 50%; float: left;"><h3>Email : </h3></div> -->
+<!-- 			<div align="left" style="width: 50%; float: left; background-color: white;"><input type="text" name="usrname" style="margin-top:2%; height: 20px;color: #328A22; font-size:14pt;"></div> -->
+			<div align="center" style="width: 100%; float: left;"><h3 style="margin-left:0;">Email : <input type="text" name="usrname" style="height: 20px;color: #328A22; font-size:14pt;"></h3></div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<input type="image" alt="submit" src="./images/login.jpg" >
+<!-- 			<div  align="center" style="width: 100%;background-color: white;"><a id="start"  type="submit" href="verify_information.php" class="icon icon-ok button">Continue</a></div> -->
+			<br>
+			<br>
+		</form>
+		</div>
+		<br><br><br>
+
+	</div>
+<br>
+<br>
+<br>
+</div>
+
+</body>
+</html>

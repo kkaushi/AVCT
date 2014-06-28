@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AVCT2.0</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script> 
+
+function newWindow(){
+	//window.open('information.html','channelmode=yes','toolbar=no','menubar=no','fullscreen=yes','location=no');
+	window.open("information.html","showInformationWindow","channelmode=1,toolbar=0,fullscreen=1,location=0,scrollbars=1");
+}
+
+$(document).ready(function(){
+  $("#flip_information").click(function(){
+    $("#panel_information").slideToggle("swing");
+
+    {
+//     	$("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);	
+// 		$("#iframe_body").css("background-color","#02A81B");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+    }
+  });
+  
+  $("#flip_severity").click(function(){
+	    $("#panel_severity").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#D76203");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_literacy").click(function(){
+	    $("#panel_literacy").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#6650B5");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_knowledge").click(function(){
+	    $("#panel_knowledge").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#DC1E2F");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);	    
+	  });
+ 
+  
+  //Step button click queries
+  $("#step1_clicked").click(function(){
+	  $("#div_walking").animate({left:'18%'},"slow");	  
+	  $("#div_step1_info").html("<h3>Enter login information to start survey</h3>");	    
+	  });
+  $("#step2_clicked").click(function(){
+	  $("#div_walking").animate({left:'34%'},"slow");
+// 	  $("#div_step2_info").html("<h3>STOFHLA: Short Test of Health Literacy in Adults</h3>");
+	  $("#div_step2_info").html("<h3>Complete Literacy Assessment</h3>");
+	  });
+  $("#step3_clicked").click(function(){
+	  $("#div_walking").animate({left:'49%'},"slow");	  
+	  $("#div_step3_info").html("<h3>Complete Symptoms Severity Assessment</h3>");	  
+	  });
+  $("#step4_clicked").click(function(){
+	  $("#div_walking").animate({left:'64%'},"slow");	  
+	  $("#div_step4_info").html("<h3>Complete BPH Knowledge Assessment</h3>");	  
+	  });
+  $("#step5_clicked").click(function(){
+	  $("#div_walking").animate({left:'79%'},"slow");	  
+	  $("#div_step5_info").html("<h3>Click Start AVCT to begin </h3>");	  
+	  });
+
+});
+</script>
+</head>
+
+<body>
+<!-- <hr color="red"> -->
+<div style="color:white;">a</div>
+<div id="header-wrapper">
+	<div id="header-wrapper2">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html"><span>AVCT</span></a></h1>
+			</div>
+<!-- 			<div id="menu"> -->
+<!-- 				<ul> -->
+<!-- 					<li><a href="#" accesskey="1" title="" id="flip_information" style="background-color:grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;" >1.INFORMATION</a></li> -->
+<!-- 					<li><a href="#" accesskey="2" title="" id="flip_severity" style="background-color: grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">2.STOFHLA</a></li> -->
+<!-- 					<li><a href="#" accesskey="3" title="" id="flip_literacy" style="background-color: grey;border-left:1px solid #FFFFFF;pointer-events:none;curson:default;">3.LITERACY</a></li> -->
+<!-- 					<li><a href="#" accesskey="4" title="" id="flip_knowledge" style="background-color: grey;border-left:1px solid #FFFFFF;border-right:1px solid #FFFFFF;pointer-events:none;curson:default;" >4.KNOWLEDGE</a></li> -->
+<!-- 				</ul> -->
+<!-- 			</div> -->
+		</div>
+	</div>
+</div>
+
+
+<div id="panel_information" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 1: Login Information</p></div>
+<div id="panel_severity" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 2: Health Literacy Test</p></div>
+<div id="panel_literacy" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 3: Severity Symptoms Score</p></div>
+<div id="panel_knowledge" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 4: BPH Knowledge Test</p></div>
+
+<hr>					
+<div id="iframe_body_two" style="width:100%; height:100px; background-color: white 	;padding-top: 50px; padding-left: 5%;"><!-- height:400px; -->
+	<br>
+	<div  align="center" style="width:100%;background-color: white;float:left;">
+	<div style="width:50%; background-color: white;float: left;text-align: left;"><h2 style="margin-left: 0;">System Overview</h2></div>
+	<!-- div style="width:50%; background-color: white;float: left"; align="left"><a id="start" href="information.html" class="icon icon-ok button" style="margin-top:30px;">Start</a></div-->
+	<div style="width:50%; background-color: white;float: left" align="left"><a id="start" href="information.html"><img border="0" alt="Start" style="margin-top:30px;" src="./images/start_btn_frame1.png"></a></div>
+		
+	</div>
+	<br>
+	<br>
+	<br>
+	
+	<div id="div_system_overview">
+		<br>
+		<br>
+		<br>
+		<div align="center" style="width:90%;border: solid 1px #05598A;">
+			<br>
+			<img src="./images/design7.jpg" width="90%">			
+		<div id="div_walking" align="left" style="margin-left: -79%;position:relative; background-color: black;width:10%;"><img src="./images/walking.gif" width="100%" height="100px" style="position: relative;"></div>
+		<br>
+		</div>
+		
+<!-- 		<div id="div_walking" style=" position:relative;"><img src="./images/walking.gif" style="postion"></div>  -->
+				<br>
+<!-- 		<br> -->
+<!-- 		<br> -->
+<!-- 		<br> -->
+<!-- 		<table style="width: 100%;border-collapse:collapse;height:100px;"> -->
+
+
+		<table style="width: 90%;">
+		  <tr>
+		    <th style="width:18%;text-align: left;"><button id="step1_clicked" style="margin-left: 5%;"><img border="0"  src="./images/step1.png" ></button></th>
+		    <th style="width:82%; text-align: left"><div id="div_step1_info"><br><h3 style="margin-left:2%;">Login</h3></div></th>
+		  </tr>
+
+		  <tr>
+		    <td>
+<!-- 		    	<br><a id="step2_clicked" href="#" ><img border="0"  src="./images/step2.png" ></a> -->
+				<br><button id="step2_clicked" style="margin-left: 5%;"><img border="0"  src="./images/step2.png" ></button>
+		    </td>
+		    <td>
+		    	<div id="div_step2_info"><h3 style="margin-left:2%;">STOFHLA</h3></div>
+		    </td>
+		    
+		  </tr>
+		   <tr>
+		    <td>
+<!-- 		    	<br><br><a id="step3_clicked" href="#"><img border="0"  src="./images/step3.png" ></a> -->
+				<br><br><button id="step3_clicked" style="margin-left: 5%;"><img border="0"  src="./images/step3.png" ></button>
+		    </td>
+		     <td>
+		    	<div id="div_step3_info"><br><h3 style="margin-left:2%;">Severity Symptoms Survey</h3></div>
+		    </td>
+		    
+		  </tr>
+		   <tr>
+		    <td>
+<!-- 		    	<br><br><a id="step4_clicked" href="#" ><img border="0"  src="./images/step4.png" ></a> -->
+				<br><br><button id="step4_clicked" style="margin-left: 5%;"><img border="0"  src="./images/step4.png" ></button>
+		    </td>
+		    <td>
+		    	<div id="div_step4_info"><br><h3 style="margin-left:2%;"> BPH knowledge</h3></div>
+		    </td>
+		    </tr>
+		    <tr>
+			    <td>
+					<br><br><button id="step5_clicked" style="margin-left: 5%;"><img border="0"  src="./images/step5.png" ></button>
+			    </td>
+			    <td>
+<!-- 			    	<br><br><button id="start" ><img border="0"  src="./images/Finish.png" ></button> -->
+			    	<br><div id="div_step5_info"><br><h3 style="margin-left:2%;"> Finish</h3></div>
+<!-- 			    	<a id="start" href="#" class="icon icon-ok button">Start Survey</a> -->
+			    </td>
+		    
+		  </tr>
+		</table>		
+		<br><br><br>
+		<!-- div  align="center" style="width: 100%;background-color: black;float:left;">
+		<a id="start" href="information.html" class="icon icon-ok button">Start</a>
+		</div-->
+		
+		<br><br><br>
+			
+	</div>
+<br>
+<br>
+<br>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AVCT2.0</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script> 
+function move_panel()
+{
+	$("#panel_literacy").slideToggle("swing");
+    $("#iframe_body_two").hide(500);
+    $("#iframe_body").show(500);
+    $("#iframe_body").css("background-color","#6650B5");
+    $("#iframe_body_two").css("background-color","white");
+    $("#iframe_body").hide(500);
+    $("#iframe_body_two").show(500);
+    
+    
+}
+
+$(document).ready(function(){
+  $("#flip_information").click(function(){
+    $("#panel_information").slideToggle("swing");
+
+//        	$("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);	
+// 		$("#iframe_body").css("background-color","#02A81B");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+  });
+  
+  $("#flip_severity").click(function(){
+	    $("#panel_severity").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#D76203");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_literacy").click(function(){
+	    $("#panel_literacy").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#6650B5");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);
+	    
+	  });
+  $("#flip_knowledge").click(function(){
+	    $("#panel_knowledge").slideToggle("swing");
+
+// 	    $("#iframe_body_two").hide(1500);
+// 	    $("#iframe_body").show(1500);
+// 	    $("#iframe_body").css("background-color","#DC1E2F");
+// 	    $("#iframe_body_two").css("background-color","white");
+// 	    $("#iframe_body").hide(1500);
+// 	    $("#iframe_body_two").show(1500);	    
+	  });
+
+});
+</script>
+</head>
+
+<body onload="move_panel()">
+<!-- <hr color="red"> -->
+<div style="color:white;">a</div>
+<div id="header-wrapper">
+	<div id="header-wrapper2">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html"><span>AVCT</span></a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#" accesskey="1" title="" id="flip_information" style="background-color:#02A81B;border-left:1px solid #FFFFFF;" >1.Information</a></li>
+					<li><a href="#" accesskey="2" title="" id="flip_severity" style="background-color: #D76203;border-left:1px solid #FFFFFF;">2.Assessment </a></li>
+					<li><a href="#" accesskey="3" title="" id="flip_literacy" style="background-color: #6650B5;border-left:1px solid #FFFFFF;">3.Symptom</a></li>
+					<li><a href="#" accesskey="4" title="" id="flip_knowledge" style="background-color: #DC1E2F;border-left:1px solid #FFFFFF;border-right:1px solid #FFFFFF;" >4.Education</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="panel_information" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 1: Login Information</p></div>
+<div id="panel_severity" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 2: Health Literacy Test</p></div>
+<div id="panel_literacy" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 3: Severity Symptoms Score</p></div>
+<div id="panel_knowledge" style="height: 4em;"><p style="display: inline-block;font-size:2.5em;text-transform: uppercase;font-weight: 400;color: #FFF;white-space:pre;">Step 4: BPH Knowledge Test</p></div>
+
+<hr>					
+<div id="iframe_body_two" style="width:100%; height:100px; background-color: white 	;padding-top: 50px; padding-left: 5%;"><!-- height:400px; -->
+	<br>
+<!-- 	<h2 style="margin-left: 0;">International Prostate Symptoms Score</h2> -->
+	<h3 style="margin-left: 0;font-weight: 700;">Please Complete Symptoms Severity Assessment</h3>
+	<div id="div_system_overview">
+<!-- 		<div align="center" style="width:90%;border: solid 1px #05598A;"> -->
+		<div align="center" style="width:90%;">
+			<br>
+
+
+			<div></div>
+		
+		<form action="verify_auass.php" method="post">
+<!-- 			<div align="right" style="width: 50%; float: left;"><h3>Email : </h3></div> -->
+<!-- 			<div align="left" style="width: 50%; float: left; background-color: white;"><input type="text" name="usrname" style="margin-top:2%;"></div> -->
+			<br>
+			<br>
+<!-- 			<table border="1" style="border-color: #05598A;width: 95;" class="auss"> -->
+				<table style="width: 95;" class="auss">
+
+				<tr>
+<!-- 			<div style="width: 45%; margin-left:5%; float: left; border:solid 1px #05598A; background-color:  white;" align="center"> -->
+<!-- 				<p class="main_center">During the last month or so how often have you</p> -->
+					<th style="width:45%;padding-left: 1%;">
+<!-- 						<h4> During the last month or so how often have you </h4> -->
+						<p class="main_center" style="padding-left:2%;font-weight:700;">During the last month or so how often have you</p>
+					</th>
+				
+<!-- 			</div> -->
+<!-- 			<div style="width: 45%; float: left;border:solid 1px #05598A; background-color: white;" align="center"> -->
+					<th style="background-color: white;">
+<!-- 						<div style="width:16%;float: left;"><h4>Not at all</h4></div> -->
+<!-- 						<div style="width:16%;height:100%;float: left; background-color: #C1C1C1;"><h4>Less than 1 time in 5</h4></div> -->
+<!-- 						<div style="width:16%;float: left;"><h4>Less than 1/2 the time</h4></div> -->
+<!-- 						<div style="width:16%;height:100%;float: left; background-color: #C1C1C1;"><h4>About 1/2 the time</h4></div> -->
+<!-- 						<div style="width:16%;float: left"><h4>More than 1/2 the time</h4></div> -->
+<!-- 						<div style="width:16%;height:100%;float: left; background-color: #C1C1C1;"><h4>Almost always</h4></div> -->
+						
+						
+						<div style="width:15%;height:100%;float: left;"><P class="main_center" style="text-align: center; font-weight:700;margin-top: 20%;margin-left: 5%;margin-right: 5%;">Not at all</P></div>
+						<div style="width:17%;height:100%;float: left; background-color: #C1C1C1;"><P class="main_center" style="text-align: center; font-weight:700;margin-top: 20%;margin-left: 5%;margin-right: 5%;">Less than 1 time in 5</P></div> 
+						<div style="width:18%;height:100%;float: left;"><P class="main_center" style="text-align: center; font-weight:700;margin-top: 20%;margin-left: 5%;margin-right: 5%;">Less than 1/2 the time</P></div>
+						<div style="width:16%;height:100%;float: left; background-color: #C1C1C1;"><P class="main_center" style="text-align: center; font-weight:700;margin-top: 20%;margin-left: 5%;margin-right: 5%;">About 1/2 the time</P></div>
+						<div style="width:18%;height:100%;float: left;"><P class="main_center" style="text-align: center; font-weight:700;margin-top: 20%;margin-left: 5%;margin-right: 5%;">More than 1/2 the time</P></div>
+						<div style="width:16%;height:100%;float: left; background-color: #C1C1C1;"><P class="main_center" style="text-align: center; font-weight:700;margin-top: 20%;margin-left: 5%;margin-right: 5%;">Almost always</P></div>
+<!-- 							<img src="./images/auss_table.png" style="width: 100%">												 -->
+					</th>
+				</tr>			
+				<tr>
+					<td>
+<!-- 						<strong>1. had a sensation of not emptying your bladder completely after urinating?</strong> -->
+						<p class="main_center">1. had a sensation of not emptying your bladder completely after urinating?</p>
+					</td>
+					<td>
+							<input type="range" name="score_1" min="0" max="5" style="width: 98%;counter-increment:1;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+<!-- 						<strong>2. had to urinate again less than two hours after you have urinated?</strong> -->
+						<p class="main_center">2. had to urinate again less than two hours after you have urinated?</p>
+ 					</td>
+					<td>
+						<input type="range" name="score_1" min="0" max="5" style="width: 98%;counter-increment:1;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+<!-- 						<strong>3. how often have you stopped and started, several times when you urinated?</strong> -->
+						<p class="main_center">3. how often have you stopped and started, serveral times when you urinated?</p>
+					</td>
+					<td>
+						<input type="range" name="score_1" min="0" max="5" style="width: 98%;counter-increment:1;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+<!-- 						<strong>4. found it difficult to postpone urination?</strong> -->
+						<p class="main_center">4. found it difficult to postpone urination?</p>
+					</td>
+					<td>
+						<input type="range" name="score_1" min="0" max="5" style="width: 98%;counter-increment:1;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+<!-- 						<strong>5. had a weak urinary stream?</strong> -->
+						<p class="main_center">5. had a weak urinary stream?</p>
+					</td>
+					<td>
+						<input type="range" name="score_1" min="0" max="5" style="width: 98%;counter-increment:1;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+<!-- 						<strong>6. had to push or stain to urinate?</strong> -->
+						<p class="main_center">6. had to push or stain to urinate?</p>
+					</td>
+					<td>
+						<input type="range" name="score_1" min="0" max="5" style="width: 98%;counter-increment:1;">
+					</td>
+				</tr>
+<!-- 			</table> -->
+<!-- 			<br><br>		 -->
+<!-- 				<table border="1" style="border-color: #05598A;width: 95;" class="auss"> -->
+				
+				<tr>
+					<td>
+<!-- 						<h4 style="text-align:center;"> During the last month </h4> -->
+						<p class="main_center">7. During the last month how many times did you most typically get up to urinate from the time you went to bed at night until the time you got up in the morning?</p>
+					</td>
+					<td style="text-align: center;">
+<!-- 						<div style="width:16%;float: left"><h4>None</h4></div> -->
+<!-- 						<div style="width:16%;height:100%;float: left;background-color: #C1C1C1;"><h4>1 times</h4></div> -->
+<!-- 						<div style="width:16%;float: left"><h4>2 times</h4></div> -->
+<!-- 						<div style="width:16%;height:100%;float: left;background-color: #C1C1C1;"><h4>3 times</h4></div> -->
+<!-- 						<div style="width:16%;float: left"><h4>4 times</h4></div> -->
+<!-- 						<div style="width:16%;height:100%;float: left;background-color: #C1C1C1;"><h4>5 times or more</h4></div> -->
+							<div style="width:15%;float:left; background-color: white;" align="center">
+								<p class="main_center"><input type="radio" name="ques7" value="None">None</p><br>
+							</div>
+							<div style="width:15%;float:left; background-color: white;" align="center">
+								<p class="main_center"><input type="radio" name="ques7" value="1 times">1 time</p><br>
+							</div>
+							<div style="width:15%;float:left; background-color: white;" align="center">
+								<p class="main_center"><input type="radio" name="ques7" value="2 times">2 times</p><br>
+							</div>
+							<div style="width:15%;float:left; background-color: white;" align="center">
+								<p class="main_center"><input type="radio" name="ques7" value="3 times">3 times</p><br>
+							</div>
+							<div style="width:15%;float:left; background-color: white;" align="center">
+								<p class="main_center"><input type="radio" name="ques7" value="4 times">4 times</p><br>
+							</div>
+							<div style="width:25%;float:left; background-color: white;" align="center">
+								<p class="main_center"><input type="radio" name="ques7" value="5 times or more">5 times or more</p><br>
+							</div>
+					</td>
+				</tr>
+<!-- 				<tr> -->
+<!-- 					<td> -->
+<!-- 						<strong>7. how many times did you most typically get up to urinate from the time you went to bed at night until the time you got up in the morning?</strong> -->
+<!-- 						<p class="main_center">how many times did you most typically get up to urinate from the time you went to bed at night until the time you got up in the morning?</p> -->
+<!-- 					</td> -->
+<!-- 					<td> -->
+<!-- 						<input type="range" name="score_1" min="0" max="5" style="width: 95%;counter-increment:1;"> -->
+<!-- 					</td> -->
+<!-- 				</tr> -->
+					
+<!-- 			</div> -->
+			</table>
+			<br>
+			<br>
+			<input type="image" alt="submit" src="./images/submit.jpg" >
+			<br>
+			<br>
+		</form>
+		</div>
+		<br><br><br>
+
+	</div>
+<br>
+<br>
+<br>
+</div>
+
+</body>
+</html>
